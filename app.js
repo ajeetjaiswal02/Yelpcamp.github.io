@@ -23,7 +23,11 @@ var commentRoutes      =  require("./routes/comments"),
 //===========================================//
 //M O N G O O S E   C O O N E C T I O N
 //============================================//
-mongoose.connect('mongodb://localhost:27017/yelp_camp_2', {useNewUrlParser: true});
+//mongoose.connect('mongodb://localhost:27017/yelp_camp_2', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://yelpcamp:dragonkaku@cluster0-fkscf.mongodb.net/test?retryWrites=true&w=majority',{
+	useNewUrlParser: true,
+	useCreateIndex: true
+})
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
