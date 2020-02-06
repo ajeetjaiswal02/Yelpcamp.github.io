@@ -65,6 +65,16 @@ app.use(campgroundRoutes);
 
 
 // USED FOR STARTING THE SERVER ON THE GIVEN PORT
-app.listen(3000,function(){
-	console.log("Yelcamp Server Started")
-})
+//app.listen(3000,function(){
+//	console.log("Yelcamp Server Started")
+//})
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+
+
+
+
+
