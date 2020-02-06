@@ -40,7 +40,7 @@ router.get("/login",function(req,res){
 })
 //** RESPONSIBLE FOR HANDLING LOG IN LOGIC
 //app.post("/login", middleware ,callback) it is use below
-router.post("/login",middelware.isregistered,passport.authenticate("local",
+router.post("/login",passport.authenticate("local",
 	{
 	  successRedirect:"/campground",
 	  failureRedirect:"/login"

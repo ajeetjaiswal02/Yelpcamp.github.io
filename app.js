@@ -19,12 +19,12 @@ var commentRoutes      =  require("./routes/comments"),
 	indexRoutes        =  require("./routes/index"),
     methodOverride     =  require("method-override")
 //++++++++++++++++++++++++++++++++++++++++++++++++++//
-//var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_2"
+var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_2"
 //console.log(process.env.DATABASEURL);
 //===========================================//
 //M O N G O O S E   C O O N E C T I O N
 //============================================//
-mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useCreateIndex: true});
+mongoose.connect(url, {useNewUrlParser: true, useCreateIndex: true});
 //mongoose.connect('mongodb+srv://yelpcamp:dragonkaku@cluster0-fkscf.mongodb.net/test?retryWrites=true&w=majority',{
 //	useNewUrlParser: true,
 //	useCreateIndex: true
