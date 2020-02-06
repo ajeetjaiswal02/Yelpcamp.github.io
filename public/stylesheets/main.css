@@ -1,0 +1,20 @@
+.img-thumbnail img {
+	width: 100%;
+	
+}
+.img-thumbnail{
+	padding:0;
+}
+
+#delete-form{
+	display: inline;
+}
+#heading{
+	color: #001f4d;
+	text-decoration: underline;
+}
+
+.delete-comment{
+	display: inline;
+}
+
