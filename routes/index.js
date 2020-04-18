@@ -50,7 +50,7 @@ router.post("/login",passport.authenticate("local",
 // LOG OUT LOGIC
 router.get("/logout",function(req,res){
 	req.logout();
-	req.flash ("success","LOGGING YOU OUT")
+	req.flash("success","LOGGING YOU OUT")
 	res.redirect("/campground")
 })
 

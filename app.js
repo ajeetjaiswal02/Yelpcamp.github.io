@@ -10,8 +10,9 @@ var express       = require("express"),
 	LocalStrategy = require("passport-local"),
     bodyParser    = require("body-parser"),
 	Campground    = require("./models/campground"),
+	 User          = require("./models/user"),
 	Comment       = require("./models/comment"),
-    User          = require("./models/user"),
+  
 	seedDB        = require("./seeds")
 	
 var commentRoutes      =  require("./routes/comments"),
@@ -70,7 +71,9 @@ app.use(campgroundRoutes);
 //	console.log("Yelcamp Server Started")
 //})
 
-const PORT = process.env.PORT || 3000;
+
+
+const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
